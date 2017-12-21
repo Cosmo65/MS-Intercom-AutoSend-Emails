@@ -1,7 +1,7 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from intercom.client import Client
 import generic
-
+import sys
 
 class HTTPServer_Intercom(BaseHTTPRequestHandler):
 	def _set_headers(self):
@@ -21,8 +21,9 @@ class HTTPServer_Intercom(BaseHTTPRequestHandler):
 					user = intercom.users.find(email=email)
 					break
 				except:
-					print(user)
-					print("User not found. Please make sure that the email \"{}\" is correct".format(email))
+					message = sys.exc_info()[1]
+					print(message)
+					print("Please make sure that the email \"{}\" is correct".format(email))
 			admin_name = input("Your Name (Not the Applicant's Name): ")
 			challenge = input("Challenge that is reset: ")
 			reason = input("Reason for resetting (don't start with capital letter): ")
