@@ -1,3 +1,9 @@
+import os
+import sys
+
+file_dir = os.path.dirname(__file__)
+sys.path.append(file_dir)
+
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from intercom.client import Client
 import generic
@@ -16,7 +22,7 @@ class HTTPServer_Intercom(BaseHTTPRequestHandler):
         self._set_headers()
         # Google Spreadsheets Credentials
         scope = ['http://spreadsheets.google.com/feeds']
-        creds = ServiceAccountCredentials.from_json_keyfile_name('client_secret.json', scope)
+        creds = ServiceAccountCredentials.from_json_keyfile_name(sys.path[0] + "/src/client_secret.json", scope)
         client = gspread.authorize(creds)
 
         # Intercom Access Token
@@ -101,4 +107,3 @@ def run_server():
     httpd.serve_forever()
 
 
-run_server()
