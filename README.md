@@ -7,4 +7,4 @@ For the applicants whose challenges are reset, which are put in a Google Sheet, 
 It is inefficient to email applicants one-by-one, when notifying the applicants can be done in batches.
 
 ## How to Use the Script
-![How The Script Works](https://github.com/yongzx/docs/Intercom-Automate-Email.gif)
+![How The Script Works](https://github.com/yongzx/MS-Intercom-AutoReply/tree/master/docs/Intercom-Automate-Email.gif)
