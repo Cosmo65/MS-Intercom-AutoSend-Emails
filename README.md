@@ -1,2 +1,10 @@
 # MS-Intercom-AutoReply
-For the applicants whose challenges are reset, this program will notify them by email using Intercom API.
+
+## Synopsis
+For the applicants whose challenges are reset, which are put in a Google Sheet, this script will notify them by email using Intercom API.
+
+## Motivation
+It is inefficient to email applicants one-by-one, when notifying the applicants can be done in batches.
+
+## How to Use the Script
+![How The Script Works](https://github.com/yongzx/docs/Intercom-Automate-Email.gif)
