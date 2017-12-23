@@ -21,14 +21,18 @@
 
 ### Run the server
 
-1. Run the `main.py` in the MS-Intercom-AutoReply folder and open https://127.0.0.1:8080 in your browser.
+1. Run the `main.py` in the MS-Intercom-AutoReply folder and open http://127.0.0.1:8080 in your browser.
 
 2. Enter the name of the Google Sheet you are accessing.
 
 3. Enter the name of the worksheet of the Google Sheet you are accessing.
 
+4. Enter your name, which will be the signature of the email. 
+
+Voila!
+
 Check out the GIF file that shows how the script works.
 
 ![How The Script Works](https://github.com/yongzx/MS-Intercom-AutoReply/blob/master/docs/Intercom-Automate-Email.gif)
 
-Voila!
+
