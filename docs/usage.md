@@ -18,6 +18,8 @@
 
 4. Click "continue" and a JSON file is downloaded. 
 5. Rename the downloaded JSON file as **client_secret.json** and put it in the MS-Intercom-Autoreply/src folder.
+6. Open the **client_secret.json** and obtain the email from the key-value pair of "client_email".
+7. Open the Google Sheet you wish to access to and share the sheet to that email.
 
 ### Run the server
 
