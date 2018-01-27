@@ -11,6 +11,7 @@ import sys
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import string
+import webbrowser
 
 class HTTPServer_Intercom(BaseHTTPRequestHandler):
     def _set_headers(self):
@@ -104,6 +105,7 @@ def run_server():
     server_address = ('127.0.0.1', 8080)
     httpd = HTTPServer(server_address, HTTPServer_Intercom)
     print("Running server http://127.0.0.1:8080/...")
+    webbrowser.open("http://127.0.0.1:8080/")
     httpd.serve_forever()
 
 
