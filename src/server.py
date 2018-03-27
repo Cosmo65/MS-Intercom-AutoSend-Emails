@@ -27,8 +27,9 @@ class HTTPServer_Intercom(BaseHTTPRequestHandler):
         client = gspread.authorize(creds)
 
         # Intercom Access Token
-        intercom = Client(personal_access_token='dG9rOjU5Nzk3ZGMwXzg3ZTRfNGYwYV9hZjBmXzRhZGI0MmMyYWE1NzoxOjA=')
-
+        # the variable intercom holds the Intercom Access Token but it is removed for privacy reason.
+        
+        
         # Reset the Applicants in a worksheet of a Google Spreadsheet document
         spreadsheet_title = input("Title of your spreadsheet (e.g. Fall 2018 Regular Decision Challenge QA): ")
         worksheet_title = input("Title of your worksheet: ")
